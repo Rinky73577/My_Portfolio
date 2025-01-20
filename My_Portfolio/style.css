@@ -516,7 +516,6 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    margin-top: 2px;
 }
 
 .heading {
@@ -604,7 +603,7 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     align-items: center;
     gap: 2.5rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
     padding: 70px;
     
 }
@@ -666,6 +665,25 @@ section {
 .row:hover .layer{
     height: 100%;
 }
+.section-description {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+.layer i:hover {
+    background: #081b29;
+    color: #051129;
+    transform: scale(1.1);
+    transition: transform 0.3s, background 0.3s;
+}
+
+
+
+
+
 
 
 

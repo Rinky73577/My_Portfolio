@@ -358,7 +358,7 @@ section {
 
 
 /* -- ---Projects--- -- */
-.main-text{
+ .main-text{
     padding-top: 130px;
     margin-top: -100px;
    
@@ -373,13 +373,13 @@ section {
     color: #0ef;
        
 }
-.portfolio-content{
+/*.portfolio-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     align-items: center;
     gap: 2.5rem;
     margin-top: 2rem;
-    padding: 70px;
+    padding: 50px;
     
 }
 .row{
@@ -423,10 +423,10 @@ section {
     line-height: 1.8;
 }
 .layer i{
-    color: #ff004f;
-    margin-top: 20px;
+    color: #0ef;
+    margin-top: 15px;
     font-size: 20px;
-    background: #e0e0e0;
+    background: #081b29;
     width: 60px;
     height: 60px;
     display: flex;
@@ -462,7 +462,123 @@ section {
     margin-bottom: 40px;
     line-height: 1.5;
 }
+.frame {
+    padding: 1rem;
+    background-color: #081b29;
+    border-radius: 8px;
+    color: #fff;
+}
 
+.frame h6 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.frame p {
+    font-size: 1rem;
+    line-height: 1.8;
+} */
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for 3 projects */
+    gap: 2.5rem; /* Space between items */
+    padding: 50px;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column; /* Stack image and description vertically */
+    gap: 1rem; /* Space between image and description */
+}
+
+.row {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.row img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.1), #0ef);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+}
+
+.layer h5 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.layer p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.layer i {
+    color: #0ef;
+    margin-top: 15px;
+    font-size: 20px;
+    background: #081b29;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.row:hover img{
+    transform: scale(1.1);
+}
+.row:hover .layer{
+    height: 100%;
+}
+.frame {
+    padding: 1rem;
+    background-color: #081b29;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.frame h6 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.frame p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
 
 
 

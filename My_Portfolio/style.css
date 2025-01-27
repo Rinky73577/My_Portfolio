@@ -26,6 +26,7 @@ body
     align-items: center;
     z-index: 100;
 }
+
 .logo {
     position: relative;
     font-size: 25px;
@@ -373,112 +374,7 @@ section {
     color: #0ef;
        
 }
-/*.portfolio-content{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-    align-items: center;
-    gap: 2.5rem;
-    margin-top: 2rem;
-    padding: 50px;
-    
-}
-.row{
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    cursor: pointer;
-}
-.row img{
-    width: 100%;
-    border-radius: 8px;
-    display: block;
-    transition: transform 0.5s;
-}
-.layer{
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.1),#0ef);
-    position: absolute;
-    border-radius: 8px;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0 40px;
-    transition: height 0.5s;
-}
-.layer h5{
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 15px;
-}
-.layer p{
-    color: #fff;
-    font-size: 1rem;
-    line-height: 1.8;
-}
-.layer i{
-    color: #0ef;
-    margin-top: 15px;
-    font-size: 20px;
-    background: #081b29;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-.row:hover img{
-    transform: scale(1.1);
-}
-.row:hover .layer{
-    height: 100%;
-}
-.section-description {
-    font-size: 18px;
-    color: #fff;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
-.layer i:hover {
-    background: #081b29;
-    color: #051129;
-    transform: scale(1.1);
-    transition: transform 0.3s, background 0.3s;
-}
-.section-description {
-    font-size: 18px;
-    color: #fff;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    line-height: 1.5;
-}
-.frame {
-    padding: 1rem;
-    background-color: #081b29;
-    border-radius: 8px;
-    color: #fff;
-}
 
-.frame h6 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.frame p {
-    font-size: 1rem;
-    line-height: 1.8;
-} */
 .portfolio-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns for 3 projects */
@@ -809,5 +705,91 @@ form textarea{
 
 
 
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .home-content {
+      flex-direction: column;
+      text-align: left;
+      gap: 30px;
+      
+    }
+  
+    .home-content h3 {
+      font-size: 1.5rem;
+    }
+  
+    .home-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .home-content p {
+      font-size: 0.9rem;
+    }
+  
+    .home-sci {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .btn-box {
+      align-self: center;
+    }
+  
+    .home-imgHover {
+      display: none; /* Add this only if there's an additional element like image hover */
+    }
+  }
+
+
+
+
+
+/* Responsive navbar Styles */
+#menu-icon {
+    display: none; /* Hidden by default on large screens */
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    #menu-icon {
+      display: block; /* Show toggle button on smaller screens */
+    }
+  
+    .navbar {
+        display: none; /* Hidden by default on small screens */
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 5px;
+        background-color: #051129;
+        box-shadow: 0 4px 6px #0ef(0, 0, 0, 0.1);
+        width: 150px;
+        padding: 6px;
+        border-radius: 10px;
+      }
+  
+      .navbar a {
+        padding: 5px 0;
+        font-size: 20px;
+        text-align: center;
+        /* border-bottom: 1px solid #ddd; */
+        margin-left: 0%;
+      }
+  
+    .navbar a:last-child {
+      border-bottom: none;
+    }
+  
+    .navbar.show {
+        display: flex; /* Make it visible when 'show' class is added */
+        flex-direction: column; /* Stack the items vertically */
+    }
+  }
+#menu-box{
+    color: #000000;
+}
+  
 
 

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
-    <div id="menu-icon" onclick="toggleMenu()">☰</div>
+    <!-- <div id="menu-icon" onclick="toggleMenu()">☰</div> -->
     
 </head>
 
@@ -17,9 +17,9 @@
 <!-- ---Navbar--- -->
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
-
+        <i onclick="toggleMenu()" id="menu-icon" class="bx bx-menu"></i>
         <nav class="navbar">
-            <a href="#home" style="--i:1;" class="active">Home</a>
+            <a href="#home" style="--i:1;" class="active"></a>
             <a href="#about" style="--i:2;">About</a>
             <a href="#services" style="--i:3;">Education</a>
             <a href="#skills" style="--i:4;">Skills</a>
@@ -27,6 +27,7 @@
             <a href="#contact" style="--i:5;">contact</a>
 
         </nav>
+
     </header>
 <!-- ---Home--- -->
     <section class="home" id="home">
@@ -49,6 +50,9 @@
         </div>
         <span class="home-imgHover"></span>
     </section>
+
+
+    
 <!-- ---About--- -->
     <section class="about" id="about">
         <div class="about-img">
@@ -240,6 +244,7 @@
     <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
 
     <script src="main.js"></script>
+    
 
 </body>
 </html>

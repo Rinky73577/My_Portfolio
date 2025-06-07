@@ -793,35 +793,3 @@ form textarea{
   
 
 
-/* Media Queries for smaller screens */
-@media screen and (max-width: 768px) {
-    .layer h5 {
-        font-size: 1rem;
-    }
-
-    .layer p {
-        font-size: 0.875rem;
-    }
-
-    .layer a {
-        font-size: 1.2rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .layer {
-        padding: 10px;
-    }
-
-    .layer h5 {
-        font-size: 0.9rem;
-    }
-
-    .layer p {
-        font-size: 0.75rem;
-    }
-
-    .layer a {
-        font-size: 1rem;
-    }
-}
